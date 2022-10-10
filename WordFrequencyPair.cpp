@@ -5,7 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "../WordFrequencyPair.h"
+#include "WordFrequencyPair.h"
 
 std::string WordFrequencyPair::TextReader(const std::string& fileName) {
 
