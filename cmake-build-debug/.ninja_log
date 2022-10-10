@@ -1,8 +1,12 @@
 # ninja log v5
-7	884	6871286721871800	CMakeFiles/Workshop_2.dir/main.cpp.obj	72707a8d4e68d07e
-887	990	6871326560674405	Workshop_2.exe	eaa92403960f2382
-4	886	6871326559661673	CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj	57b0f72cd7085adf
-1	445	6871337354156772	build.ninja	c1b30de4f104f
 10	936	6871337364734401	CMakeFiles/Workshop_2.dir/main.cpp.obj	72707a8d4e68d07e
-6	1151	6871337366894566	CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj	94af8ea04f9a448f
-1151	1284	6871337368185378	Workshop_2.exe	eaa92403960f2382
+1	445	6871344927336175	build.ninja	c1b30de4f104f
+1002	1117	6871343343562694	Workshop_2.exe	eaa92403960f2382
+3	1000	6871343342406214	CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj	94af8ea04f9a448f
+8	1131	6871347630377195	CMakeFiles/Workshop_2.dir/Reader.cpp.obj	72602cd01123e37d
+3	1137	6871347630545550	CMakeFiles/Workshop_2.dir/main.cpp.obj	72707a8d4e68d07e
+15	1198	6871347631211763	CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj	94af8ea04f9a448f
+1198	1441	6871347633701847	Workshop_2.exe	4f0e379e5657889b
+4	827	6871353990375739	CMakeFiles/Workshop_2.dir/main.cpp.obj	72707a8d4e68d07e
+9	839	6871353990496127	CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj	94af8ea04f9a448f
+840	970	6871353991777640	Workshop_2.exe	4f0e379e5657889b

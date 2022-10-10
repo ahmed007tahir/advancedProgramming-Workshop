@@ -3,30 +3,8 @@
 //
 #include <string>
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include "WordFrequencyPair.h"
-
-std::string WordFrequencyPair::TextReader(const std::string& fileName) {
-
-    std::string line;
-    std::string text;
-
-    std::ifstream myFile (fileName);
-
-    if (myFile.is_open()) {
-        while (getline(myFile, line)) {
-            text += line;
-            text += "\n";
-            }
-        myFile.close();
-    }
-    else std::cout << "Unable to open file";
-
-    std::cout << text << std::endl;
-
-    return text;
-}
 
 
 int WordFrequencyPair::NumberOfSentences(const std::string& text) {
@@ -45,6 +23,7 @@ int WordFrequencyPair::NumberOfSentences(const std::string& text) {
     return countSentences;
 }
 
+
 std::vector<WordFrequencyPair> WordFrequencyPair::ListFrequencyPairs(const std::string& text){
 
     int startIndexPointer = 0;
@@ -58,7 +37,7 @@ std::vector<WordFrequencyPair> WordFrequencyPair::ListFrequencyPairs(const std::
         if (x == ' ' || x == ',' || x ==  '\n' || x ==  '!' || x ==  '.' || x ==  ':' || x ==  ';' || x ==  '?') {
             endIndexPointer = i;
             n = endIndexPointer - startIndexPointer;
-            std::cout << text.substr(startIndexPointer, n) << std::endl;
+            std::cout << (text.substr(startIndexPointer, n)) << std::endl;
             startIndexPointer = endIndexPointer + 1;
         }
 

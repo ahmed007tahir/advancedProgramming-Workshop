@@ -61,6 +61,12 @@ build CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj: CXX_COMPILER__Worksho
   OBJECT_DIR = CMakeFiles\Workshop_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Workshop_2.dir
 
+build CMakeFiles/Workshop_2.dir/Reader.cpp.obj: CXX_COMPILER__Workshop_2_Debug C$:/Users/ahmed/Desktop/OneDrive$ -$ University$ of$ Lincoln/Year$ 2/Advanced$ Programming/Week$ 2/Workshop$ 2/Reader.cpp || cmake_object_order_depends_target_Workshop_2
+  DEP_FILE = CMakeFiles\Workshop_2.dir\Reader.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Workshop_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Workshop_2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Workshop_2
@@ -69,7 +75,7 @@ build CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj: CXX_COMPILER__Worksho
 #############################################
 # Link the executable Workshop_2.exe
 
-build Workshop_2.exe: CXX_EXECUTABLE_LINKER__Workshop_2_Debug CMakeFiles/Workshop_2.dir/main.cpp.obj CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj
+build Workshop_2.exe: CXX_EXECUTABLE_LINKER__Workshop_2_Debug CMakeFiles/Workshop_2.dir/main.cpp.obj CMakeFiles/Workshop_2.dir/WordFrequencyPair.cpp.obj CMakeFiles/Workshop_2.dir/Reader.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Workshop_2.dir

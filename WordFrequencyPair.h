@@ -10,13 +10,10 @@ class WordFrequencyPair {
 private:
 
 public:
-    static std::string TextReader(const std::string& fileName);
     static int NumberOfSentences(const std::string& text);
     static std::vector<WordFrequencyPair> ListFrequencyPairs(const std::string& text);
-
     std::string word;
     int frequency;
-
 };
 
 
