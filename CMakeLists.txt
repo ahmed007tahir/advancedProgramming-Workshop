@@ -3,4 +3,4 @@ project(Workshop_2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Workshop_2 main.cpp)
+add_executable(Workshop_2 main.cpp WordFrequencyPair.h cmake-build-debug/WordFrequencyPair.cpp)
