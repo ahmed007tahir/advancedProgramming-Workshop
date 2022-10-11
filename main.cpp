@@ -11,7 +11,12 @@ int main () {
     int sentences = WordFrequencyPair::NumberOfSentences(text);
     std::cout << "Number of Sentences: " << sentences << std::endl;
 
-    WordFrequencyPair::ListFrequencyPairs(text);
+    std::vector<WordFrequencyPair> test = WordFrequencyPair::ListFrequencyPairs(text);
+
+    for (auto i = test.begin(); i != test.end(); ++i) {
+        std::cout << i->getWord() << "\t" << i->getFrequency() << std::endl;
+
+    }
 
     return 0;
 }

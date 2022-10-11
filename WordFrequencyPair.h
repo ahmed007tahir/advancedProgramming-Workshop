@@ -8,12 +8,20 @@
 
 class WordFrequencyPair {
 private:
+    std::string _word;
+    int _frequency = 1;
 
 public:
+    std::string getWord() {return _word;}
+    int getFrequency() {return _frequency;}
+    void addFrequency() {_frequency++;}
+
     static int NumberOfSentences(const std::string& text);
     static std::vector<WordFrequencyPair> ListFrequencyPairs(const std::string& text);
-    std::string word;
-    int frequency;
+
+    // constructor
+    WordFrequencyPair(std::string word);
+
 };
 
 
