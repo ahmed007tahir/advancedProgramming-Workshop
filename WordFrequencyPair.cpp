@@ -1,6 +1,7 @@
 //
 // Created by ahmed on 10/10/2022.
 //
+#include <algorithm>
 #include <string>
 #include <iostream>
 #include <vector>
@@ -27,6 +28,7 @@ int WordFrequencyPair::NumberOfSentences(const std::string& text) {
 std::vector<WordFrequencyPair> WordFrequencyPair::ListFrequencyPairs(const std::string& text){
 
     int startIndexPointer = 0, endIndexPointer = 0, n = 0;
+    bool flag = false;
 
     std::vector<WordFrequencyPair> hello;
 
@@ -38,9 +40,21 @@ std::vector<WordFrequencyPair> WordFrequencyPair::ListFrequencyPairs(const std::
             n = endIndexPointer - startIndexPointer;
 
             std::string word = text.substr(startIndexPointer, n);
-            hello.emplace_back(word);
+            if (word != "\n" && word != "") {
 
-            startIndexPointer = endIndexPointer + 1;
+                for (auto i = hello.begin(); i != hello.end(); i++) {
+                    if (i->getWord() == word) {
+                        i->addFrequency();
+                        flag = true;
+                    }
+                }
+
+                if (!flag){
+                    hello.emplace_back(word);
+                }
+                startIndexPointer = endIndexPointer + 1;
+                flag = false;
+            }
         }
 
         // now i have the beginning and end index of the first word that needs to be added to the vector.
