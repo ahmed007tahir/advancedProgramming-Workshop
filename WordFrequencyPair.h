@@ -17,6 +17,7 @@ public:
     void addFrequency() {_frequency++;}
 
     static int NumberOfSentences(const std::string& text);
+    static int NumberofWords(const std::string& text);
     static std::vector<WordFrequencyPair> ListFrequencyPairs(const std::string& text);
 
     // constructor
